@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../buildMultiTargeting/JwtTemlate.props" />
+  <Import Project="..\buildMultiTargeting\JwtTemlate.props" />
 </Project>

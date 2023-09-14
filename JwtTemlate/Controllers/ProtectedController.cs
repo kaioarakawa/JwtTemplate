@@ -14,6 +14,7 @@ namespace JwtTemlate.Controllers
     [Authorize]
     public class ProtectedController : ControllerBase
     {
+        [HttpGet]
         public IActionResult GetData()
         {
             return Ok("Data from protected controller");

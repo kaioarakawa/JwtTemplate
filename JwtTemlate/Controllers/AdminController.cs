@@ -14,6 +14,7 @@ namespace JwtTemlate.Controllers
     [Authorize(Roles = "Admin")] 
     public class AdminController : ControllerBase
     {
+        [HttpGet]
         public IActionResult GetData()
         {
             return Ok("Data from admin controller");

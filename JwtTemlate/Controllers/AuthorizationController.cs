@@ -36,6 +36,7 @@ namespace JwtTemlate.Controllers
         }
 
         [HttpPost]
+        [Route("/Login")]
         public async Task<IActionResult> Login([FromBody]LoginModel loginModel)
         {
             var user = await userManager.FindByEmailAsync(loginModel.Username);
@@ -109,6 +110,7 @@ namespace JwtTemlate.Controllers
         }
 
         [HttpPost]
+        [Route("/Registration")]
         public async Task<IActionResult> Registration([FromBody]RegistrationModel registrationModel)
         {
             var status = new Status();
@@ -166,6 +168,7 @@ namespace JwtTemlate.Controllers
         }
 
         [HttpPost]
+        [Route("/RegistrationAdmin")]
         public async Task<IActionResult> RegistrationAdmin([FromBody] RegistrationModel registrationModel)
         {
             var status = new Status();
@@ -223,6 +226,7 @@ namespace JwtTemlate.Controllers
         }
 
         [HttpPost]
+        [Route("/ChangePassword")]
         public async Task<IActionResult> ChangePassword(ChangePasswordModel changePasswordModel)
         {
             var status = new Status();
@@ -239,7 +243,7 @@ namespace JwtTemlate.Controllers
             //find user
             var user = await userManager.FindByNameAsync(changePasswordModel.Username);
 
-            if(user != null)
+            if(user is null)
             {
                 status.StatusCode = 0;
                 status.Message = "Invalid username";

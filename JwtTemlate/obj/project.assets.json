@@ -4329,25 +4329,32 @@
     ]
   },
   "packageFolders": {
-    "/Users/kaioarakawa/.nuget/packages/": {}
+    "C:\\Users\\kaioa\\.nuget\\packages\\": {},
+    "D:\\VS shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kaioarakawa/Projects/JwtTemlate/JwtTemlate/JwtTemlate.csproj",
+      "projectUniqueName": "D:\\JwtTemplate\\JwtTemlate\\JwtTemlate.csproj",
       "projectName": "JwtTemlate",
-      "projectPath": "/Users/kaioarakawa/Projects/JwtTemlate/JwtTemlate/JwtTemlate.csproj",
-      "packagesPath": "/Users/kaioarakawa/.nuget/packages/",
-      "outputPath": "/Users/kaioarakawa/Projects/JwtTemlate/JwtTemlate/obj/",
+      "projectPath": "D:\\JwtTemplate\\JwtTemlate\\JwtTemlate.csproj",
+      "packagesPath": "C:\\Users\\kaioa\\.nuget\\packages\\",
+      "outputPath": "D:\\JwtTemplate\\JwtTemlate\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\VS shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/kaioarakawa/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\kaioa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/sdk/7.0.307/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4420,7 +4427,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

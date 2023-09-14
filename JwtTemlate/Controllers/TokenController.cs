@@ -25,6 +25,7 @@ namespace JwtTemlate.Controllers
         }
 
         [HttpPost]
+        [Route("/Refresh")]
         public IActionResult Refresh(RefreshTokenRequest tokenApiModel)
         {
             if (tokenApiModel is null)
@@ -58,6 +59,7 @@ namespace JwtTemlate.Controllers
 
         //Revoke is used to revoming token access
         [HttpPost, Authorize]
+        [Route("/Revoke")]
         public IActionResult Revoke()
         {
             try
